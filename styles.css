@@ -219,7 +219,7 @@ section.ctf ul li a svg {
 @media (max-width:610px) {
     body {
         display: block;
-        max-width: 377px;
+        max-width: calc(100% - 89px);
     }
 
     body>div {
