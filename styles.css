@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    gap: 0 24px;
+    width: 100%;
+    margin: 55px auto 0 auto;
+    display: flex;
+    max-width: 610px;
+}
+
+/* Sidebar */
+img {
+    --square-px: 144px;
+    width: var(--square-px);
+    height: var(--square-px);
+    border-radius: 3px;
+}
+
+ul.links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.links li {
+    padding: 8px 0;
+}
+
+ul.links a {
+    gap: 0 8px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+ul.links a svg {
+    color: rgb(0, 144, 144);
+}
+
+ul.links a span {
+    color: rgb(0, 144, 144);
+    font-weight: 400;
+}
+
+/*End sidebar*/
+
+header {
+    gap: 0 13px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    color: rgb(0, 0, 0, .89);
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.89rem;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.55rem;
+    font-weight: 300;
+}
+
+header hr {
+    border-top: none;
+    border-color: rgb(0, 0, 0, .13);
+}
+
+
+menu {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin: 21px 0 0 0;
+
+}
+
+section>p {
+    margin: 0 0 8px 0;
+    font-size: 1.13rem;
+    font-weight: 400;
+}
+
+section ul {
+    margin: 0;
+}
+
+section ul li {
+    margin: 8px 0;
+}
+
+section ul li header {
+    margin: 0 0 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section ul li span {
+    color: rgb(0, 0, 0, .89);
+    display: block;
+    font-size: 1.13rem;
+    font-weight: 300;
+}
+
+section ul li span b {
+    font-weight: 400;
+}
+
+section.experience ul li {
+    margin-bottom: 21px;
+}
+
+section.experience ul li p {
+    font-size: 1.13rem;
+    font-weight: 300;
+}
+
+.labels_container {
+    gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.labels_container span {
+
+    padding: 3px 5px;
+    display: inline;
+    text-wrap: nowrap;
+    font-style: normal;
+    font-size: .89rem;
+    font-weight: 300;
+    border-radius: 5px;
+}
+
+.frog-sky-blue-labels span {
+    color: rgb(0, 144, 144);
+    border: 1px solid rgb(0, 144, 144, .55);
+}
+
+section ul li p {
+    margin: 0 0 5px 0;
+    font-size: 1.13rem;
+}
+
+section.experience .development-time {
+    margin: 5px 0;
+    font-weight: 300;
+}
+
+section.experience .development-time b {
+    font-weight: 400;
+}
+
+/* CTF Section */
+section.ctf ul {
+    margin: 21px 0 0 0;
+    padding: 0;
+}
+
+section.ctf ul li {
+    gap: 13px;
+    display: flex;
+    margin-bottom: 21px;
+}
+
+section.ctf ul li p {
+    font-weight: 300;
+}
+
+section.ctf ul li img {
+    --square-px: 34px;
+    width: var(--square-px);
+    height: var(--square-px);
+    border-radius: 3px;
+}
+
+section.ctf ul li header span {
+    display: block;
+    font-weight: 400;
+}
+
+section.ctf ul li a {
+    gap: 0 8px;
+    display: flex;
+    font-weight: 350;
+    text-decoration: none;
+}
+
+section.ctf ul li a span {
+    color: rgb(0, 0, 0);
+    font-weight: 350;
+}
+
+section.ctf ul li a svg {
+    color: rgb(0, 0, 0, .89);
+    stroke-width: 1.55px;
+}
+
+.red-labels span {
+    gap: 0 5px;
+    display: flex;
+    align-items: center;
+    color: rgb(89, 0, 0, .8);
+    border: 1px solid rgba(89, 0, 0, 0.55);
+}
+
+/* End CTF section */
