@@ -48,6 +48,7 @@ ul.links a span {
 
 /*End sidebar*/
 
+
 header {
     gap: 0 13px;
     display: flex;
@@ -214,3 +215,15 @@ section.ctf ul li a svg {
 }
 
 /* End CTF section */
+
+@media (max-width:610px) {
+    body {
+        display: block;
+        max-width: 377px;
+    }
+
+    body>div {
+        gap: 0 21px;
+        display: flex;
+    }
+}
