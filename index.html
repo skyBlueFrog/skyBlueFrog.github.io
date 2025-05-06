@@ -305,7 +305,7 @@
                             </header>
                             <span>Linux</span>
                             <p>
-                                Cap es una máquina Linux de dificultad fácil que expone un servidor HTTP con funciones
+                                Cap es una maquina que expone un servidor HTTP con funciones
                                 administrativas mal protegidas. Una vulnerabilidad IDOR permite acceder a capturas de
                                 red ajenas, revelando credenciales en texto plano. Con ellas, se gana acceso y se escala
                                 a root mediante una capacidad de Linux mal gestionada.
@@ -340,7 +340,7 @@
                             </header>
                             <span>Linux</span>
                             <p>
-                                SteamCloud es una máquina de dificultad fácil que revela puertos específicos de
+                                SteamCloud es una máquina que revela puertos específicos de
                                 Kubernetes abiertos. Aunque el API requiere autenticación, Kubelet permite acceso
                                 anónimo, lo que permite listar pods del clúster. Al acceder a uno de ellos, se obtienen
                                 claves para autenticar en la API y desplegar un pod malicioso desde donde se ejecutan
@@ -376,7 +376,7 @@
                             </header>
                             <span>Linux</span>
                             <p>
-                                Secret es una máquina Linux fácil que expone el código fuente de una API de
+                                Secret es una máquina Linux que expone el código fuente de una API de
                                 autenticación personalizada, revelando un repositorio Git con un commit que contiene la
                                 clave secreta para firmar tokens JWT. Con esta clave, se falsifica un token como
                                 theadmin y se explota un endpoint vulnerable a inyección de comandos para obtener una
@@ -412,7 +412,7 @@
                             </header>
                             <span>Linux</span>
                             <p>
-                                Blunder es una máquina Linux fácil que expone un CMS Bludit en el puerto 80. Tras
+                                Blunder es una máquina Linux que expone un CMS Bludit en el puerto 80. Tras
                                 identificar un archivo de texto con pistas sobre el usuario fergus y una página de login
                                 admin protegida contra ataques de fuerza bruta, se explota una vulnerabilidad para
                                 acceder al panel como fergus. Luego, se usa una vulnerabilidad de carga de archivos
@@ -521,7 +521,7 @@
                             </header>
                             <span>Linux</span>
                             <p>
-                                Postman es una máquina Linux fácil que ejecuta un servidor Redis sin autenticación. Este
+                                Postman es una máquina Linux que ejecuta un servidor Redis sin autenticación. Este
                                 servicio se puede aprovechar para escribir una clave pública SSH en la carpeta del
                                 usuario. Tras encontrar una clave privada SSH cifrada y crackearla, se obtiene acceso al
                                 usuario. Además, el usuario tiene una cuenta en una versión antigua de Webmin, que es
