@@ -4,15 +4,24 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
 body {
     gap: 0 24px;
     width: 100%;
     margin: 55px auto 0 auto;
     display: flex;
-    max-width: 610px;
+    max-width: 987px;
+}
+
+main {
+    padding: 0 89px 0 0;
 }
 
 /* Sidebar */
+.sidebar {
+    padding-left: 89px;
+}
+
 img {
     --square-px: 144px;
     width: var(--square-px);
@@ -86,7 +95,7 @@ section {
 
 section>p {
     margin: 0 0 8px 0;
-    font-size: 1.13rem;
+    font-size: 1.21rem;
     font-weight: 400;
 }
 
@@ -108,7 +117,7 @@ section ul li header {
 section ul li span {
     color: rgb(0, 0, 0, .89);
     display: block;
-    font-size: 1.13rem;
+    font-size: 1.21rem;
     font-weight: 300;
 }
 
@@ -121,7 +130,7 @@ section.experience ul li {
 }
 
 section.experience ul li p {
-    font-size: 1.13rem;
+    font-size: 1.21rem;
     font-weight: 300;
 }
 
@@ -132,12 +141,11 @@ section.experience ul li p {
 }
 
 .labels_container span {
-
     padding: 3px 5px;
     display: inline;
     text-wrap: nowrap;
     font-style: normal;
-    font-size: .89rem;
+    font-size: 1rem;
     font-weight: 300;
     border-radius: 5px;
 }
@@ -149,7 +157,7 @@ section.experience ul li p {
 
 section ul li p {
     margin: 0 0 5px 0;
-    font-size: 1.13rem;
+    font-size: 1.21rem;
 }
 
 section.experience .development-time {
@@ -219,7 +227,14 @@ section.ctf ul li a svg {
 @media (max-width:610px) {
     body {
         display: block;
-        max-width: calc(100% - 89px);
+    }
+
+    main {
+        padding: 0 34px;
+    }
+
+    .sidebar {
+        padding-left: 34px;
     }
 
     body>div {
