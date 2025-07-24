@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+      color-scheme: light dark;
+}
+
 * {
     font-family: 'Roboto', sans-serif;
 }
-
 
 body {
     gap: 0 24px;
@@ -14,7 +17,7 @@ body {
 }
 
 a {
-    color: rgb(0, 144, 144);
+    color: light-dark(rgb(0, 144, 144), rgb(0, 233, 233));
     text-decoration: none;
     font-weight: 377;
 }
@@ -53,11 +56,11 @@ ul.links a {
 }
 
 ul.links a svg {
-    color: rgb(0, 144, 144);
+    color: light-dark(rgb(0, 144, 144), rgb(0, 233, 233));
 }
 
 ul.links a span {
-    color: rgb(0, 144, 144);
+    color: light-dark(rgb(0, 144, 144), rgb(0, 233, 233));
     font-weight: 400;
 }
 
@@ -71,7 +74,7 @@ header {
 }
 
 header h1 {
-    color: rgb(0, 0, 0, .89);
+    color: light-dark(rgb(0, 0, 0, .89), rgb(255, 255, 255, .89));
     margin: 0;
     font-weight: 400;
     font-size: 1.89rem;
@@ -85,7 +88,7 @@ header p {
 
 header hr {
     border-top: none;
-    border-color: rgb(0, 0, 0, .13);
+    border-color: light-dark(rgb(0, 0, 0, .13), rgb(255, 255, 255, .13));
 }
 
 
@@ -121,7 +124,7 @@ section ul li header {
 }
 
 section ul li span {
-    color: rgb(0, 0, 0, .89);
+    color: light-dark(rgb(0, 0, 0, .89), rgb(255, 255, 255, .89));
     display: block;
     font-size: 1.21rem;
     font-weight: 300;
@@ -157,9 +160,9 @@ section.experience ul li p {
 }
 
 .frog-sky-blue-labels span {
-    color: rgb(0, 144, 144);
-    border: 1px solid rgb(0, 144, 144, .08);
-    background-color: rgb(0, 144, 144, .08);
+    color: light-dark(rgb(0, 144, 144), rgb(0, 233, 233));
+    border: 1px solid light-dark(rgb(0, 144, 144, .08), rgb(0, 233, 233, .08));
+    background-color: light-dark(rgb(0, 144, 144, .08), rgb(0, 233, 233, .08));
 }
 
 section ul li p {
@@ -212,22 +215,22 @@ section.ctf ul li a {
 }
 
 section.ctf ul li a span {
-    color: rgb(0, 0, 0);
+    color: light-dark(rgb(0, 0, 0, 1), rgb(255, 255, 255, 1));
     font-weight: 350;
 }
 
 section.ctf ul li a svg {
-    color: rgb(0, 0, 0, .89);
+    color: light-dark(rgb(0, 0, 0, .89), rgb(255, 255, 255, .89));
     stroke-width: 1.55px;
 }
 
 .red-labels span {
     gap: 0 5px;
-    color: rgb(89, 0, 0, .8);
-    border: 1px solid rgba(89, 0, 0, 0.08);
+    color: light-dark(rgb(89, 0, 0, .8), rgb(233, 0, 0, .89));
+    border: 1px solid light-dark(rgb(89, 0, 0, .08), rgb(233, 0, 0, .08));
     display: flex;
     align-items: center;
-    background-color: rgba(89, 0, 0, 0.08);
+    background-color: light-dark(rgb(89, 0, 0, .08), rgb(233, 0, 0, .08));
 }
 
 /* End CTF section */
