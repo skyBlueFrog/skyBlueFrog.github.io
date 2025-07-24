@@ -235,7 +235,7 @@ section.ctf ul li a svg {
 
 /* End CTF section */
 
-@media (max-width:610px) {
+@media (max-width: 987px) {
     body {
         display: block;
     }
