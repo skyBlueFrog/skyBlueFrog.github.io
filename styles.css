@@ -1,8 +1,8 @@
 /*
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-*/
+ * 🐸 Este archivo contiene los estilos no-críticos de la página,
+ * cargados de forma asíncrona para no bloquear el renderizado inicial.
+ */
 
-/* Peso 300 (Light) */
 @font-face {
     font-family: 'Roboto';
     /* Prioridad a WOFF2 por ser más ligero */
@@ -30,13 +30,10 @@
 }
 
 :root {
-      color-scheme: light dark;
+    color-scheme: light dark;
 }
 
 * {
-    /*
-    font-family: 'Roboto', sans-serif;
-    */
     font-family: 'Roboto', sans-serif;
 }
 
@@ -97,7 +94,6 @@ ul.links a span {
 }
 
 /*End sidebar*/
-
 
 header {
     gap: 0 13px;

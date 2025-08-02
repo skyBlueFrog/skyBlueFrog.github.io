@@ -4,11 +4,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Proyectos de Santiago Benavidez, Software Engineer. Descubre mis proyectos, experimentos aislados, habilidades técnicas y algunos logros en Red Team (CTF).">
+    <meta name="description"
+        content="Proyectos de Santiago Benavidez, Software Engineer. Descubre mis proyectos, experimentos aislados, habilidades técnicas y algunos logros en Red Team (CTF).">
     <title>Santiago Benavidez</title>
+
+    <style>
+        /* Fuentes críticas */
+        @font-face {
+            font-family: 'Roboto';
+            src: url('/fonts/Roboto-Light.woff2') format('woff2'), url('/fonts/Roboto-Light.woff') format('woff'), url('/fonts/Roboto-Light.ttf') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            src: url('/fonts/Roboto-Regular.woff2') format('woff2'), url('/fonts/Roboto-Regular.woff') format('woff'), url('/fonts/Roboto-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        /* Estilos generales y del diseño principal */
+        :root {
+            color-scheme: light dark;
+        }
+
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            gap: 0 24px;
+            width: 100%;
+            margin: 55px auto 0 auto;
+            display: flex;
+            max-width: 987px;
+        }
+
+        a {
+            color: light-dark(rgb(0, 144, 144), rgb(0, 233, 233));
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+        main {
+            padding: 0 89px 0 0;
+        }
+
+        .sidebar {
+            padding-left: 89px;
+        }
+
+        img {
+            --square-px: 144px;
+            width: var(--square-px);
+            height: var(--square-px);
+            border-radius: 3px;
+        }
+
+        ul.links {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        ul.links li {
+            padding: 8px 0;
+        }
+
+        ul.links a {
+            gap: 0 8px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        ul.links a svg {
+            color: light-dark(rgb(0, 144, 144), rgb(0, 233, 233));
+        }
+
+        ul.links a span {
+            color: light-dark(rgb(0, 144, 144), rgb(0, 233, 233));
+            font-weight: 400;
+        }
+
+        header {
+            gap: 0 13px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        header h1 {
+            color: light-dark(rgb(0, 0, 0, .89), rgb(255, 255, 255, .89));
+            margin: 0;
+            font-weight: 400;
+            font-size: 1.89rem;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.55rem;
+            font-weight: 300;
+        }
+
+        /* Estilos responsivos críticos para la vista móvil */
+        @media (max-width: 987px) {
+            body {
+                display: block;
+            }
+
+            main {
+                padding: 0 34px;
+            }
+
+            .sidebar {
+                padding-left: 34px;
+            }
+
+            body>div {
+                gap: 0 21px;
+                display: flex;
+            }
+        }
+    </style>
+
     <link rel="preload" href="/fonts/Roboto-Light.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="styles.css">
+    </noscript>
+
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
 </head>
 
@@ -19,8 +148,7 @@
             <ul class="links">
                 <li>
                     <a target="_blank" href="https://www.linkedin.com/in/santiagoctech/">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                            viewBox="0 0 24 24"><!-- Icon from Simple Icons by Simple Icons Collaborators - https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
                             <path fill="currentColor"
                                 d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037c-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85c3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.06 2.06 0 0 1-2.063-2.065a2.064 2.064 0 1 1 2.063 2.065m1.782 13.019H3.555V9h3.564zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z" />
                         </svg>
@@ -30,8 +158,7 @@
                 <li>
                     <a target="_blank" href="https://app.hackthebox.com/profile/1829879">
                         <svg style="margin: 0 -3px 0 -2px; color:#40c900;" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24"
-                            viewBox="0 0 24 24"><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                            height="24" viewBox="0 0 24 24">
                             <path fill="currentColor"
                                 d="M11 19.425v-6.85L5 9.1v6.85zm2 0l6-3.475V9.1l-6 3.475zm-1-8.575l5.925-3.425L12 4L6.075 7.425zM4 17.7q-.475-.275-.737-.725t-.263-1v-7.95q0-.55.263-1T4 6.3l7-4.025Q11.475 2 12 2t1 .275L20 6.3q.475.275.738.725t.262 1v7.95q0 .55-.262 1T20 17.7l-7 4.025Q12.525 22 12 22t-1-.275zm8-5.7" />
                         </svg>
