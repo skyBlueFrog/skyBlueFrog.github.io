@@ -2,18 +2,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 */
 
+/* Peso 300 (Light) */
 @font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
+    font-family: 'Roboto';
+    /* Prioridad a WOFF2 por ser más ligero */
+    src: url('../fonts/Roboto-Light.woff2') format('woff2'),
+         /* WOFF para compatibilidad con navegadores antiguos */
+         url('../fonts/Roboto-Light.woff') format('woff'),
+         /* TTF como fallback para los navegadores muy antiguos */
+         url('../fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
+    font-family: 'Roboto';
+    /* Prioridad a WOFF2 por ser más ligero */
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+         /* WOFF para compatibilidad con navegadores antiguos */
+         url('../fonts/Roboto-Regular.woff') format('woff'),
+         /* TTF como fallback para los navegadores muy antiguos */
+         url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
 :root {
