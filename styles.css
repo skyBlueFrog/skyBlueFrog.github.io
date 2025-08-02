@@ -38,7 +38,7 @@ body {
 a {
     color: light-dark(rgb(0, 144, 144), rgb(0, 233, 233));
     text-decoration: none;
-    font-weight: 377;
+    font-weight: 400;
 }
 
 main {
