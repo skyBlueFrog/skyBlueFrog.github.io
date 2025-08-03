@@ -31,8 +31,6 @@
 
 :root {
     color-scheme: light dark;
-
-    --sky-blue: light-dark(rgb(0, 122, 122), rgb(0, 233, 233));
 }
 
 * {
@@ -48,7 +46,7 @@ body {
 }
 
 a {
-    color: var(--sky-blue);
+    color: light-dark(rgb(0, 144, 144), rgb(0, 233, 233));
     text-decoration: none;
     font-weight: 400;
 }
@@ -87,11 +85,11 @@ ul.links a {
 }
 
 ul.links a svg {
-    color: var(--sky-blue);
+    color: light-dark(rgb(0, 144, 144), rgb(0, 233, 233));
 }
 
 ul.links a span {
-    color: var(--sky-blue);
+    color: light-dark(rgb(0, 144, 144), rgb(0, 233, 233));
     font-weight: 400;
 }
 
@@ -190,7 +188,7 @@ section.experience ul li p {
 }
 
 .frog-sky-blue-labels span {
-    color: var(--sky-blue);
+    color: light-dark(rgb(0, 144, 144), rgb(0, 233, 233));
     border: 1px solid light-dark(rgb(0, 144, 144, .08), rgb(0, 233, 233, .08));
     background-color: light-dark(rgb(0, 144, 144, .08), rgb(0, 233, 233, .08));
 }
