@@ -7,10 +7,10 @@
     font-family: 'Roboto';
     /* Prioridad a WOFF2 por ser más ligero */
     src: url('../fonts/Roboto-Light.woff2') format('woff2'),
-         /* WOFF para compatibilidad con navegadores antiguos */
-         url('../fonts/Roboto-Light.woff') format('woff'),
-         /* TTF como fallback para los navegadores muy antiguos */
-         url('../fonts/Roboto-Light.ttf') format('truetype');
+        /* WOFF para compatibilidad con navegadores antiguos */
+        url('../fonts/Roboto-Light.woff') format('woff'),
+        /* TTF como fallback para los navegadores muy antiguos */
+        url('../fonts/Roboto-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -20,10 +20,10 @@
     font-family: 'Roboto';
     /* Prioridad a WOFF2 por ser más ligero */
     src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
-         /* WOFF para compatibilidad con navegadores antiguos */
-         url('../fonts/Roboto-Regular.woff') format('woff'),
-         /* TTF como fallback para los navegadores muy antiguos */
-         url('../fonts/Roboto-Regular.ttf') format('truetype');
+        /* WOFF para compatibilidad con navegadores antiguos */
+        url('../fonts/Roboto-Regular.woff') format('woff'),
+        /* TTF como fallback para los navegadores muy antiguos */
+        url('../fonts/Roboto-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -169,6 +169,16 @@ section.experience ul li {
 section.experience ul li p {
     font-size: 1.21rem;
     font-weight: 300;
+}
+
+.project-version {
+    border: 1px solid light-dark(rgb(0, 0, 0, .13), rgb(255, 255, 255, .13));
+    display: inline;
+    padding: 1px 5px;
+    font-size: .89rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 2px;
 }
 
 .labels_container {
