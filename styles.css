@@ -37,12 +37,20 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body {
-    gap: 0 24px;
+nav {
     width: 100%;
-    margin: 55px auto 0 auto;
+    margin: 0 0 0 auto;
     display: flex;
-    max-width: 987px;
+    justify-content: right;
+}
+
+nav a {
+    color: light-dark(rgb(0,0,0), rgb(255,255,255));
+    padding: 13px 21px;
+}
+
+nav a:hover {
+    opacity: .55;
 }
 
 a {
@@ -52,12 +60,26 @@ a {
 }
 
 main {
-    padding: 0 89px 0 0;
+    padding: 55px 34px 55px 34px;
+    border-left: 1px solid light-dark(rgb(0, 0, 0, .05), rgb(255, 255, 255, .03));
+    border-right: 1px solid light-dark(rgb(0, 0, 0, .05), rgb(255, 255, 255, .03));
+}
+
+.divisor {
+    left: 50%;
+    width: 89%;
+    border: none;
+    height: 1px;
+    display: block;
+    z-index: -1;
+    position: absolute;
+    background: light-dark(rgb(0, 0, 0, .05), rgb(255, 255, 255, .03));
+    transform: translate(-50%, -5px);
 }
 
 /* Sidebar */
 .sidebar {
-    padding-left: 89px;
+    /* padding-left: 89px; */
 }
 
 img {
@@ -65,6 +87,7 @@ img {
     width: var(--square-px);
     height: var(--square-px);
     border-radius: 3px;
+    margin-top: 89px;
 }
 
 ul.links {
@@ -99,6 +122,7 @@ header {
     gap: 0 13px;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 21px;
 }
 
 header h1 {
@@ -278,13 +302,22 @@ section.ctf ul li a svg {
         display: block;
     }
 
-    main {
-        padding: 0 34px;
+    img {
+        margin-top: 0;
     }
 
-    .sidebar {
-        padding-left: 34px;
+    main {
+        padding: 0 34px;
+        border: none;
     }
+
+    .divisor {
+        display: none;
+    }
+
+    /* .sidebar {
+        padding-left: 34px;
+    } */
 
     body>div {
         gap: 0 21px;

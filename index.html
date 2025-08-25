@@ -35,10 +35,10 @@
             font-family: 'Roboto', sans-serif;
         }
 
-        body {
+        .row {
             gap: 0 24px;
             width: 100%;
-            margin: 55px auto 0 auto;
+            margin: 0 auto 0 auto;
             display: flex;
             max-width: 987px;
         }
@@ -54,7 +54,7 @@
         }
 
         .sidebar {
-            padding-left: 89px;
+            /* padding-left: 89px; */
         }
 
         img {
@@ -142,784 +142,799 @@
 </head>
 
 <body>
-    <div class="sidebar">
-        <img src="src/frog.webp" alt="" fetchpriority="high">
-        <section>
-            <ul class="links">
-                <li>
-                    <a target="_blank" href="https://www.linkedin.com/in/santiagoctech/">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                            <path fill="currentColor"
-                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037c-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85c3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.06 2.06 0 0 1-2.063-2.065a2.064 2.064 0 1 1 2.063 2.065m1.782 13.019H3.555V9h3.564zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z" />
-                        </svg>
-                        <span>Linkedin</span>
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://app.hackthebox.com/profile/1829879">
-                        <svg style="margin: 0 -3px 0 -2px; color:#40c900;" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24">
-                            <path fill="currentColor"
-                                d="M11 19.425v-6.85L5 9.1v6.85zm2 0l6-3.475V9.1l-6 3.475zm-1-8.575l5.925-3.425L12 4L6.075 7.425zM4 17.7q-.475-.275-.737-.725t-.263-1v-7.95q0-.55.263-1T4 6.3l7-4.025Q11.475 2 12 2t1 .275L20 6.3q.475.275.738.725t.262 1v7.95q0 .55-.262 1T20 17.7l-7 4.025Q12.525 22 12 22t-1-.275zm8-5.7" />
-                        </svg>
-                        <span style="color: #40c900;">HTB</span>
-                    </a>
-                </li>
-            </ul>
-        </section>
-    </div>
-    <main>
-        <header>
-            <div>
-                <h1>Santiago Benavidez</h1>
-                <p>Software engineering</p>
-            </div>
-        </header>
+    <!-- <nav>
+        <a href="">Mi Perfil</a>
+        <a href="">Syntax</a>
+    </nav> -->
 
-        <menu>
-            <section class="quick-facs">
-                <p>Áreas en desarrollo</p>
-                <ul>
-                    <li><span><a target="_blank" href="https://www.jetbrains.com/kotlin-multiplatform/">Kotlin Multiplatform</a></span></li>
-                    <li><span><a target="_blank" href="https://www.rust-lang.org/">Rust</a></span></li>
-                    <li><span><a target="_blank" href="https://actix.rs/">Actix-web</a> (Rust Framework)</span></li>
-                </ul>
-            </section>
+    <div class="row">
 
-            <section class="quick-facs">
-                <p>Lenguajes de programación y frameworks</p>
-                <ul>
-                    <li><span>Jetpack Compose (UI en Kotlin) con
-                            <a target="_blank" href="https://youtu.be/n17dnMChX14?si=mZDBEYc-cVVpwklp">Material 3
-                                Expressive
-                            </a>
-                        </span>
+        <div class="sidebar">
+            <img src="src/frog.webp" alt="" fetchpriority="high">
+            <section>
+                <ul class="links">
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/santiagoctech/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037c-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85c3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.06 2.06 0 0 1-2.063-2.065a2.064 2.064 0 1 1 2.063 2.065m1.782 13.019H3.555V9h3.564zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z" />
+                            </svg>
+                            <span>Linkedin</span>
+                        </a>
                     </li>
-                    <li><span>Angular</span></li>
-                    <li><span>CSS</span></li>
-                    <li><span>Django</span></li>
-                    <li><span>HTML</span></li>
-                    <li><span>JavaScript</span></li>
-                    <li><span>Python</span></li>
-                    <li><span>TypeScript</span></li>
+                    <li>
+                        <a target="_blank" href="https://app.hackthebox.com/profile/1829879">
+                            <svg style="margin: 0 -3px 0 -2px; color:#40c900;" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M11 19.425v-6.85L5 9.1v6.85zm2 0l6-3.475V9.1l-6 3.475zm-1-8.575l5.925-3.425L12 4L6.075 7.425zM4 17.7q-.475-.275-.737-.725t-.263-1v-7.95q0-.55.263-1T4 6.3l7-4.025Q11.475 2 12 2t1 .275L20 6.3q.475.275.738.725t.262 1v7.95q0 .55-.262 1T20 17.7l-7 4.025Q12.525 22 12 22t-1-.275zm8-5.7" />
+                            </svg>
+                            <span style="color: #40c900;">HTB</span>
+                        </a>
+                    </li>
                 </ul>
             </section>
+        </div>
+        <main>
+            <hr class="divisor">
 
-            <section class="quick-facs">
-                <p>Habilidades técnicas</p>
-                <ul>
-                  <li><span>Automatización de tareas a escala, mediante scripts diseñados en python</span></li>
-                  <li><span>Diseño de servidores y bases de datos</span></li>
-                  <li><span>Desarrollo de sitios web y aplicaciones móviles multiplataforma</span></li>
-                  <li><span>Prototipado de aplicaciones con diseños de alta fidelidad en Figma</span></li>
-                  <li><span>Implementación de embeddings y modelos de lenguaje (LLMs)</span></li>
-                </ul>
-            </section>
+            <header>
+                <div>
+                    <h1>Santiago Benavidez</h1>
+                    <p>Software engineering</p>
+                </div>
+            </header>
 
-            <!--
-            <div style="
-                margin: 21px 0;
-                padding: 21px;
-                border-radius: 5px;
-                background-color: light-dark(rgb(0, 0, 0, .03), rgb(255, 255, 255, .03));
-            ">
-                <section class="quick-facs" style="margin-top: 0;">
-                    <p>Experiencia en Interfaces de usuario</p>
+            <menu>
+                <section class="quick-facs">
+                    <p>Áreas en desarrollo</p>
+                    <ul>
+                        <li><span><a target="_blank" href="https://www.jetbrains.com/kotlin-multiplatform/">Kotlin Multiplatform</a></span></li>
+                        <li><span><a target="_blank" href="https://www.rust-lang.org/">Rust</a></span></li>
+                        <li><span><a target="_blank" href="https://actix.rs/">Actix-web</a> (Rust Framework)</span></li>
+                    </ul>
+                </section>
+
+                <section class="quick-facs">
+                    <p>Lenguajes de programación y frameworks</p>
+                    <ul>
+                        <li><span>Jetpack Compose (UI en Kotlin) con
+                                <a target="_blank" href="https://youtu.be/n17dnMChX14?si=mZDBEYc-cVVpwklp">Material 3
+                                    Expressive
+                                </a>
+                            </span>
+                        </li>
+                        <li><span>Angular</span></li>
+                        <li><span>CSS</span></li>
+                        <li><span>Django</span></li>
+                        <li><span>HTML</span></li>
+                        <li><span>JavaScript</span></li>
+                        <li><span>Python</span></li>
+                        <li><span>TypeScript</span></li>
+                    </ul>
+                </section>
+
+                <section class="quick-facs">
+                    <p>Habilidades técnicas</p>
+                    <ul>
+                    <li><span>Automatización de tareas a escala, mediante scripts diseñados en python</span></li>
+                    <li><span>Diseño de servidores y bases de datos</span></li>
+                    <li><span>Desarrollo de sitios web y aplicaciones móviles multiplataforma</span></li>
+                    <li><span>Prototipado de aplicaciones con diseños de alta fidelidad en Figma</span></li>
+                    <li><span>Implementación de embeddings y modelos de lenguaje (LLMs)</span></li>
+                    </ul>
+                </section>
+
+                <!--
+                <div style="
+                    margin: 21px 0;
+                    padding: 21px;
+                    border-radius: 5px;
+                    background-color: light-dark(rgb(0, 0, 0, .03), rgb(255, 255, 255, .03));
+                ">
+                    <section class="quick-facs" style="margin-top: 0;">
+                        <p>Experiencia en Interfaces de usuario</p>
+                        <ul>
+                            <li>
+                                <span>
+                                    En 2022 comencé a desarrollar interfaces de usuario utilizando únicamente HTML y CSS puro,
+                                    sin frameworks.
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    Durante ese tiempo, desarrollé la habilidad de poder replicar en código diseños exactos a ojo.
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    Con el tiempo entendí la importancia de tener un diseño planificado, por lo que incorporé Figma
+                                    a mi flujo de trabajo.
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    Ahora mismo, dedico alrededor de 120 horas a diseñar prototipos completos y detallados antes
+                                    de llevarlos al código.
+                                </span>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                -->
+
+                <hr class="divisor">
+
+                <section class="experience">
+                    <p>Experimentos aislados</p>
                     <ul>
                         <li>
-                            <span>
-                                En 2022 comencé a desarrollar interfaces de usuario utilizando únicamente HTML y CSS puro,
-                                sin frameworks.
+                            <header>
+                                <span><b>Syntax</b> <span class="project-version">pre-alpha</span></span>
+                                <span><b>Actualidad</b></span>
+                            </header>
+                            <p>
+                                Núcleo modular listo para el desarrollo completo de Productos Mínimos Viables (MVP) altamente optimizados, escalables y de bajo costo de mantenimiento.
+                                <br>
+                                Diseñado para actualizar y liderar en masa aplicaciones finales. Cualquier mejora aplicada al núcleo se replica automáticamente en todas las apps basadas en él, reduciendo tiempos y esfuerzo de mantenimiento.
+                                <br>
+                                Utilizo <a target="_blank" href="https://www.rust-lang.org/">Rust</a> como lenguaje de backend y <a target="_blank" href="https://actix.rs/">Actix-web</a> (para utilizarlo en nivel de servidor). Cuenta con ejecución de bajo nivel cercana al fierro (hardware), lo que reduce altos costos de cómputo en la nube, contribuyendo a la reducción de emisiones de CO₂. Solo así garantizo un rendimiento máximo (top 1 % en benchmarks de rendimiento), alta eficiencia y seguridad en memoria, evitando vulnerabilidades comunes como los desbordamientos de búfer presentes en lenguajes tradicionales como C o C++.
+                                <br>
+                                En el frontend, empleo <a target="_blank" href="https://www.jetbrains.com/kotlin-multiplatform/">Kotlin Multiplatform</a> (KMP) para crear interfaces para el usuario final, bajo el sistema de diseño <a href="https://m3.material.io/" target="_blank">M3 Expressive</a>. Aseguro una experiencia coherente, moderna y alineada con las guías de diseño actuales de Google.
+                            </p>
+                            <span class="labels_container frog-sky-blue-labels"><b>Habilidades empleadas:</b>
+                                <span>Figma</span>
+                                <span>Kotlin</span>
+                                <span>Material You</span>
+                                <span>PostgreSQL</span>
+                                <span>PostgreSQL</span>
+                                <span>Rust</span>
+                            </span>
+                        </li>
+
+                        <li>
+                            <header>
+                                <span><b>Fashion Diffusion</b></span>
+                                <span><b>2023</b></span>
+                            </header>
+                            <p>
+                                Una tienda en línea que integra todo el catálogo de indumentaria publicado en MercadoLibre,
+                                con imágenes de entrenamiento suficientes por artículo, actualizadas en tiempo real. La
+                                plataforma permite generar visualizaciones realistas del usuario vistiendo cualquier
+                                prenda disponible, ofreciendo una experiencia previa a la compra más inmersiva y
+                                personalizada.
+
+                                El potencial se vió limitado por factores como: el posible mal uso de la
+                                tecnología para generar imágenes indebidas (como correr riesgo de que se genere deepnude en
+                                el servidor), el alto costo computacional asociado al uso intensivo de GPU/TPU, y el riesgo
+                                de infringir normas legales.
+                            </p>
+                            <span class="labels_container frog-sky-blue-labels"><b>Habilidades empleadas:</b>
+                                <span>CSS</span>
+                                <span>Django</span>
+                                <span>Google Colab</span>
+                                <span>HTML</span>
+                                <span>JavaScript</span>
+                                <span>Postgresql</span>
+                                <span>Python</span>
+                                <span>Selenium Web Driver</span>
+                                <span>Stable Diffusion</span>
+                                <span>Web Scrapping</span>
+                            </span>
+                            <span class="development-time"><b>Coste de desarrollo:</b> 1 año</span>
+                        </li>
+                        <li>
+                            <header>
+                                <span><b>OniricMapping</b></span>
+                                <span><b>2023</b></span>
+                            </header>
+                            <p>
+                                Un sistema diseñado para comparar similitud entre cada bloque de imagen satelital del
+                                planeta con un dibujo otorgado por el usuario, surgidos de sus sueños oníricos (mios).
+                                Utilizando una API no oficial de Google Maps —obtenida tras analizar los endpoints
+                                consultados por la plataforma— el script recorre coordenadas globales, descarga imágenes
+                                satelitales en tiempo real y evalúa su similitud con el dibujo ingresado. El usuario puede
+                                ajustar el umbral de similitud deseado, permitiendo que el sistema detecte coincidencias
+                                visuales entre el fragmento soñado y regiones reales del planeta.
+
+                                Una herramienta experimental para geolocalizar sueños.
+
+                                Utilizando <a target="_blank" href="https://github.com/lllyasviel/ControlNet">StableDiffusion control-net
+                                    (gradio_scribble2image.py)</a> para convertir los trazos del soñador en mapas
+                                satelitales
+                            </p>
+                            <span class="labels_container frog-sky-blue-labels"><b>Habilidades empleadas:</b>
+                                <span>Python</span>
+                                <span>Stable diffusion</span>
+                                <span>Web Scrapping</span>
+                            </span>
+                            <span class="development-time"><b>Coste de desarrollo:</b> 3 semanas</span>
+                        </li>
+                        <li>
+                            <header>
+                                <span><b>LifeToMovie</b></span>
+                                <span><b>2022</b></span>
+                            </header>
+                            <p>
+                                Una App Web que recibe tu historia personal como entrada y sugiere películas donde la
+                                similitud entre tu relato y la vida del protagonista sea alta.
+                                Se mal basó en la API de ChatGPT para interpretar los textos, cosa que devolvía resultados
+                                genéricos. Ahora (2025) soy consciente de que la versión ideal se lograría vectorizando toda
+                                la información narrativa de las películas para así compararla directamente con la historia
+                                del usuario. Esto permitiría localizar similitudes empíricas.
+                            </p>
+                            <span class="labels_container frog-sky-blue-labels"><b>Habilidades empleadas:</b>
+                                <span>CSS</span>
+                                <span>Django</span>
+                                <span>HTML</span>
+                                <span>OpenAI API</span>
+                                <span>Postgresql</span>
+                                <span>Python</span>
+                                <span>TMDB API</span>
+                            </span>
+                            <span class="development-time"><b>Coste de desarrollo:</b> 1 mes</span>
+                        </li>
+                        <li>
+                            <header>
+                                <span><b>MeliAI</b></span>
+                                <span><b>2021</b></span>
+                            </header>
+                            <p>
+                                Un sistema completo y automatizado desarrollado en Python con Selenium, diseñado para
+                                navegar y recolectar masivamente información de productos desde la plataforma de
+                                MercadoLibre. Su objetivo principal es identificar aquellos artículos que carecen de
+                                descripción detallada, generar textos optimizados utilizando modelos de lenguaje (LLM) a
+                                partir de detalles técnicos de los productos (sin descripción).
+
+                                Incluye un generador automático de documentos con las nuevas descripciones mejoradas y un
+                                sistema de distribución masiva para enviarlas directamente a los vendedores vía whatsapp
+                                (Api no oficial creada con selenium). Aunque MercadoLibre no provee canales de contacto
+                                externos de forma oficial, el sistema logra acceder a ellos mediante técnicas avanzadas de
+                                descubrimiento basadas en análisis de subdominios... si xD
+                            </p>
+                            <span class="development-time"><b>Coste de desarrollo:</b> 2 meses</span>
+                            <span class="labels_container frog-sky-blue-labels"><b>Habilidades empleadas:</b>
+                                <span>API de WhatsApp vía scraping</span>
+                                <span>Python</span>
+                                <span>Selenium Web Driver</span>
+                                <span>Web Scrapping</span>
                             </span>
                         </li>
                         <li>
-                            <span>
-                                Durante ese tiempo, desarrollé la habilidad de poder replicar en código diseños exactos a ojo.
+                            <header>
+                                <span><b>PsicoRecogn</b></span>
+                                <span><b>2021</b></span>
+                            </header>
+                            <p>
+                                Serie de scripts que recolecta de manera masiva, rostros y los analiza en busca de patrones
+                                asociados a la morfopsicología. Utiliza OpenCV para el reconocimiento y trazado de
+                                lineamientos faciales, aunque con una precisión del asco.
+                                El desarrollo quedó en pausa, a la espera de mejores modelos y más veloces que permita parar
+                                marcar mallas faciales con mejor precision. Para tener mayor fiabilidad en los rasgos
+                                morfopsicológicos y poner esta pseudo sciencia a prueba.
+                            </p>
+                            <span class="labels_container frog-sky-blue-labels"><b>Habilidades empleadas:</b>
+                                <span>Open CV</span>
+                                <span>Python</span>
+                                <span>Selenium Web Drive</span>
+                                <span>Web Scraping</span>
                             </span>
-                        </li>
-                        <li>
-                            <span>
-                                Con el tiempo entendí la importancia de tener un diseño planificado, por lo que incorporé Figma
-                                a mi flujo de trabajo.
-                            </span>
-                        </li>
-                        <li>
-                            <span>
-                                Ahora mismo, dedico alrededor de 120 horas a diseñar prototipos completos y detallados antes
-                                de llevarlos al código.
-                            </span>
+                            <span class="development-time"><b>Coste de desarrollo:</b> 1 mes</span>
                         </li>
                     </ul>
                 </section>
-            </div>
-            -->
 
+                <hr class="divisor" style="transform: translate(-50%, -21px);">
 
-            <section class="experience">
-                <p>Experimentos aislados</p>
-                <ul>
-                    <li>
-                        <header>
-                            <span><b>Syntax</b> <span class="project-version">pre-alpha</span></span>
-                            <span><b>Actualidad</b></span>
-                        </header>
-                        <p>
-                            Núcleo modular listo para el desarrollo completo de Productos Mínimos Viables (MVP) altamente optimizados, escalables y de bajo costo de mantenimiento.
-                            <br>
-                            Diseñado para actualizar y liderar en masa aplicaciones finales. Cualquier mejora aplicada al núcleo se replica automáticamente en todas las apps basadas en él, reduciendo tiempos y esfuerzo de mantenimiento.
-                            <br>
-                            Utilizo <a target="_blank" href="https://www.rust-lang.org/">Rust</a> como lenguaje de backend y <a target="_blank" href="https://actix.rs/">Actix-web</a> (para utilizarlo en nivel de servidor). Cuenta con ejecución de bajo nivel cercana al fierro (hardware), lo que reduce altos costos de cómputo en la nube, contribuyendo a la reducción de emisiones de CO₂. Solo así garantizo un rendimiento máximo (top 1 % en benchmarks de rendimiento), alta eficiencia y seguridad en memoria, evitando vulnerabilidades comunes como los desbordamientos de búfer presentes en lenguajes tradicionales como C o C++.
-                            <br>
-                            En el frontend, empleo <a target="_blank" href="https://www.jetbrains.com/kotlin-multiplatform/">Kotlin Multiplatform</a> (KMP) para crear interfaces para el usuario final, bajo el sistema de diseño <a href="https://m3.material.io/" target="_blank">M3 Expressive</a>. Aseguro una experiencia coherente, moderna y alineada con las guías de diseño actuales de Google.
-                        </p>
-                        <span class="labels_container frog-sky-blue-labels"><b>Habilidades empleadas:</b>
-                            <span>Figma</span>
-                            <span>Kotlin</span>
-                            <span>Material You</span>
-                            <span>PostgreSQL</span>
-                            <span>PostgreSQL</span>
-                            <span>Rust</span>
-                        </span>
-                    </li>
+                <section class="ctf">
+                    <p>Captura la bandera (CTF)</p>
+                    <ul>
+                        <li>
+                            <img loading="lazy"
+                                src="https://labs.hackthebox.com/storage/avatars/4ef1ea77e69185063d4200d7d0142baa.png"
+                                alt="">
+                            <div>
+                                <div>
+                                    <header>
+                                        <span>Mirai</span>
+                                        <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/64">
+                                            <span>
+                                                Marzo 29, 2024
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
+                                        </a>
+                                    </header>
+                                    <span>Linux</span>
+                                </div>
+                                <p>
+                                    Mirai demuestra uno de los vectores de ataque de más rápido crecimiento en la era
+                                    moderna. Los dispositivos IoT mal configurados. A medida que se multiplican por el
+                                    mundo, botnets enteras los explotan sin descanso, y los atacantes los usan para
+                                    establecer persistencia a largo plazo dentro de redes internas. Una amenaza sigilosa,
+                                    imparable y en expansión.
+                                </p>
+                                <div class="labels_container red-labels">
+                                    <span>Default Credentials</span>
+                                    <span>Information Disclosure</span>
+                                </div>
+                            </div>
+                        </li>
 
-                    <li>
-                        <header>
-                            <span><b>Fashion Diffusion</b></span>
-                            <span><b>2023</b></span>
-                        </header>
-                        <p>
-                            Una tienda en línea que integra todo el catálogo de indumentaria publicado en MercadoLibre,
-                            con imágenes de entrenamiento suficientes por artículo, actualizadas en tiempo real. La
-                            plataforma permite generar visualizaciones realistas del usuario vistiendo cualquier
-                            prenda disponible, ofreciendo una experiencia previa a la compra más inmersiva y
-                            personalizada.
-
-                            El potencial se vió limitado por factores como: el posible mal uso de la
-                            tecnología para generar imágenes indebidas (como correr riesgo de que se genere deepnude en
-                            el servidor), el alto costo computacional asociado al uso intensivo de GPU/TPU, y el riesgo
-                            de infringir normas legales.
-                        </p>
-                        <span class="labels_container frog-sky-blue-labels"><b>Habilidades empleadas:</b>
-                            <span>CSS</span>
-                            <span>Django</span>
-                            <span>Google Colab</span>
-                            <span>HTML</span>
-                            <span>JavaScript</span>
-                            <span>Postgresql</span>
-                            <span>Python</span>
-                            <span>Selenium Web Driver</span>
-                            <span>Stable Diffusion</span>
-                            <span>Web Scrapping</span>
-                        </span>
-                        <span class="development-time"><b>Coste de desarrollo:</b> 1 año</span>
-                    </li>
-                    <li>
-                        <header>
-                            <span><b>OniricMapping</b></span>
-                            <span><b>2023</b></span>
-                        </header>
-                        <p>
-                            Un sistema diseñado para comparar similitud entre cada bloque de imagen satelital del
-                            planeta con un dibujo otorgado por el usuario, surgidos de sus sueños oníricos (mios).
-                            Utilizando una API no oficial de Google Maps —obtenida tras analizar los endpoints
-                            consultados por la plataforma— el script recorre coordenadas globales, descarga imágenes
-                            satelitales en tiempo real y evalúa su similitud con el dibujo ingresado. El usuario puede
-                            ajustar el umbral de similitud deseado, permitiendo que el sistema detecte coincidencias
-                            visuales entre el fragmento soñado y regiones reales del planeta.
-
-                            Una herramienta experimental para geolocalizar sueños.
-
-                            Utilizando <a target="_blank" href="https://github.com/lllyasviel/ControlNet">StableDiffusion control-net
-                                (gradio_scribble2image.py)</a> para convertir los trazos del soñador en mapas
-                            satelitales
-                        </p>
-                        <span class="labels_container frog-sky-blue-labels"><b>Habilidades empleadas:</b>
-                            <span>Python</span>
-                            <span>Stable diffusion</span>
-                            <span>Web Scrapping</span>
-                        </span>
-                        <span class="development-time"><b>Coste de desarrollo:</b> 3 semanas</span>
-                    </li>
-                    <li>
-                        <header>
-                            <span><b>LifeToMovie</b></span>
-                            <span><b>2022</b></span>
-                        </header>
-                        <p>
-                            Una App Web que recibe tu historia personal como entrada y sugiere películas donde la
-                            similitud entre tu relato y la vida del protagonista sea alta.
-                            Se mal basó en la API de ChatGPT para interpretar los textos, cosa que devolvía resultados
-                            genéricos. Ahora (2025) soy consciente de que la versión ideal se lograría vectorizando toda
-                            la información narrativa de las películas para así compararla directamente con la historia
-                            del usuario. Esto permitiría localizar similitudes empíricas.
-                        </p>
-                        <span class="labels_container frog-sky-blue-labels"><b>Habilidades empleadas:</b>
-                            <span>CSS</span>
-                            <span>Django</span>
-                            <span>HTML</span>
-                            <span>OpenAI API</span>
-                            <span>Postgresql</span>
-                            <span>Python</span>
-                            <span>TMDB API</span>
-                        </span>
-                        <span class="development-time"><b>Coste de desarrollo:</b> 1 mes</span>
-                    </li>
-                    <li>
-                        <header>
-                            <span><b>MeliAI</b></span>
-                            <span><b>2021</b></span>
-                        </header>
-                        <p>
-                            Un sistema completo y automatizado desarrollado en Python con Selenium, diseñado para
-                            navegar y recolectar masivamente información de productos desde la plataforma de
-                            MercadoLibre. Su objetivo principal es identificar aquellos artículos que carecen de
-                            descripción detallada, generar textos optimizados utilizando modelos de lenguaje (LLM) a
-                            partir de detalles técnicos de los productos (sin descripción).
-
-                            Incluye un generador automático de documentos con las nuevas descripciones mejoradas y un
-                            sistema de distribución masiva para enviarlas directamente a los vendedores vía whatsapp
-                            (Api no oficial creada con selenium). Aunque MercadoLibre no provee canales de contacto
-                            externos de forma oficial, el sistema logra acceder a ellos mediante técnicas avanzadas de
-                            descubrimiento basadas en análisis de subdominios... si xD
-                        </p>
-                        <span class="development-time"><b>Coste de desarrollo:</b> 2 meses</span>
-                        <span class="labels_container frog-sky-blue-labels"><b>Habilidades empleadas:</b>
-                            <span>API de WhatsApp vía scraping</span>
-                            <span>Python</span>
-                            <span>Selenium Web Driver</span>
-                            <span>Web Scrapping</span>
-                        </span>
-                    </li>
-                    <li>
-                        <header>
-                            <span><b>PsicoRecogn</b></span>
-                            <span><b>2021</b></span>
-                        </header>
-                        <p>
-                            Serie de scripts que recolecta de manera masiva, rostros y los analiza en busca de patrones
-                            asociados a la morfopsicología. Utiliza OpenCV para el reconocimiento y trazado de
-                            lineamientos faciales, aunque con una precisión del asco.
-                            El desarrollo quedó en pausa, a la espera de mejores modelos y más veloces que permita parar
-                            marcar mallas faciales con mejor precision. Para tener mayor fiabilidad en los rasgos
-                            morfopsicológicos y poner esta pseudo sciencia a prueba.
-                        </p>
-                        <span class="labels_container frog-sky-blue-labels"><b>Habilidades empleadas:</b>
-                            <span>Open CV</span>
-                            <span>Python</span>
-                            <span>Selenium Web Drive</span>
-                            <span>Web Scraping</span>
-                        </span>
-                        <span class="development-time"><b>Coste de desarrollo:</b> 1 mes</span>
-                    </li>
-                </ul>
-            </section>
-
-            <section class="ctf">
-                <p>Captura la bandera (CTF)</p>
-                <ul>
-                    <li>
-                        <img loading="lazy"
-                            src="https://labs.hackthebox.com/storage/avatars/4ef1ea77e69185063d4200d7d0142baa.png"
-                            alt="">
-                        <div>
+                        <li>
+                            <img loading="lazy"
+                                src="https://labs.hackthebox.com/storage/avatars/0f058b73659ca043de9f5240abd651ca.png"
+                                alt="">
                             <div>
                                 <header>
-                                    <span>Mirai</span>
-                                    <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/64">
-                                        <span>
-                                            Marzo 29, 2024
-                                        </span>
+                                    <span>Bashed</span>
+                                    <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/118">
+                                        <span>Marzo 29, 2024</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
+
                                     </a>
                                 </header>
                                 <span>Linux</span>
+                                <p>
+                                    Bashed es una máquina relativamente sencilla que se centra en el uso de fuzzing para
+                                    descubrir archivos clave. Aunque el acceso básico al crontab está restringido, cada
+                                    pista encontrada revela un sendero oculto hacia la escalada de privilegios.
+                                </p>
+                                <div class="labels_container red-labels">
+                                    <span>Code Execution</span>
+                                    <span>OS Command Injection</span>
+                                </div>
                             </div>
-                            <p>
-                                Mirai demuestra uno de los vectores de ataque de más rápido crecimiento en la era
-                                moderna. Los dispositivos IoT mal configurados. A medida que se multiplican por el
-                                mundo, botnets enteras los explotan sin descanso, y los atacantes los usan para
-                                establecer persistencia a largo plazo dentro de redes internas. Una amenaza sigilosa,
-                                imparable y en expansión.
-                            </p>
-                            <div class="labels_container red-labels">
-                                <span>Default Credentials</span>
-                                <span>Information Disclosure</span>
+                        </li>
+                        <li>
+                            <img loading="lazy"
+                                src="https://labs.hackthebox.com/storage/avatars/70ea3357a2d090af11a0953ec8717e90.png"
+                                alt="">
+                            <div>
+                                <header>
+                                    <span>Cap</span>
+                                    <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/351">
+                                        <span>Marzo 30, 2024</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
+
+                                    </a>
+                                </header>
+                                <span>Linux</span>
+                                <p>
+                                    Cap es una maquina que expone un servidor HTTP con funciones
+                                    administrativas mal protegidas. Una vulnerabilidad IDOR permite acceder a capturas de
+                                    red ajenas, revelando credenciales en texto plano. Con ellas, se gana acceso y se escala
+                                    a root mediante una capacidad de Linux mal gestionada.
+                                </p>
+                                <div class="labels_container red-labels">
+                                    <span>Clear Text Credentials</span>
+                                    <span>File System Configuration</span>
+                                    <span>Insecure Direct Object Reference (IDOR)</span>
+                                </div>
                             </div>
-                        </div>
-                    </li>
+                        </li>
+                        <li>
+                            <img loading="lazy"
+                                src="https://labs.hackthebox.com/storage/avatars/a1fbd7cce1df4145b6a95df4644321bf.png"
+                                alt="">
+                            <div>
+                                <header>
+                                    <span>SteamCloud</span>
+                                    <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/443">
+                                        <span>Abril 22, 2024</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
 
-                    <li>
-                        <img loading="lazy"
-                            src="https://labs.hackthebox.com/storage/avatars/0f058b73659ca043de9f5240abd651ca.png"
-                            alt="">
-                        <div>
-                            <header>
-                                <span>Bashed</span>
-                                <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/118">
-                                    <span>Marzo 29, 2024</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
+                                    </a>
+                                </header>
+                                <span>Linux</span>
+                                <p>
+                                    SteamCloud es una máquina que revela puertos específicos de
+                                    Kubernetes abiertos. Aunque el API requiere autenticación, Kubelet permite acceso
+                                    anónimo, lo que permite listar pods del clúster. Al acceder a uno de ellos, se obtienen
+                                    claves para autenticar en la API y desplegar un pod malicioso desde donde se ejecutan
+                                    comandos para capturar la root flag.
+                                </p>
+                                <div class="labels_container red-labels">
+                                    <span>Anonymous/Guest Access</span>
+                                    <span>Command Execution</span>
+                                    <span>Misconfiguration</span>
+                                    <span>Sensitive Data Exposure</span>
+                                </div>
+                        </li>
+                        <li>
+                            <img loading="lazy"
+                                src="https://labs.hackthebox.com/storage/avatars/c05aacfbe9bd98ea2840070538283b1e.png"
+                                alt="">
+                            <div>
+                                <header>
+                                    <span>Secret</span>
+                                    <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/408">
+                                        <span>Abril 23, 2024</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
 
-                                </a>
-                            </header>
-                            <span>Linux</span>
-                            <p>
-                                Bashed es una máquina relativamente sencilla que se centra en el uso de fuzzing para
-                                descubrir archivos clave. Aunque el acceso básico al crontab está restringido, cada
-                                pista encontrada revela un sendero oculto hacia la escalada de privilegios.
-                            </p>
-                            <div class="labels_container red-labels">
-                                <span>Code Execution</span>
-                                <span>OS Command Injection</span>
+                                    </a>
+                                </header>
+                                <span>Linux</span>
+                                <p>
+                                    Secret es una máquina Linux que expone el código fuente de una API de
+                                    autenticación personalizada, revelando un repositorio Git con un commit que contiene la
+                                    clave secreta para firmar tokens JWT. Con esta clave, se falsifica un token como
+                                    theadmin y se explota un endpoint vulnerable a inyección de comandos para obtener una
+                                    shell como dasith. Luego, se abusa de un binario SUID que lee archivos como root; al
+                                    provocar un fallo con volcados de memoria activos, se extrae la clave SSH de root.
+                                </p>
+                                <div class="labels_container red-labels">
+                                    <span>Misconfiguration</span>
+                                    <span>OS Command Injection</span>
+                                    <span>Weak Authentication</span>
+                                </div>
+                        </li>
+                        <li>
+                            <img loading="lazy"
+                                src="https://labs.hackthebox.com/storage/avatars/6437ea67350beceeb5c313f386bd1abe.png"
+                                alt="">
+                            <div>
+                                <header>
+                                    <span>Blunder</span>
+                                    <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/254">
+                                        <span>Abril 25, 2024</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
+
+                                    </a>
+                                </header>
+                                <span>Linux</span>
+                                <p>
+                                    Blunder es una máquina Linux que expone un CMS Bludit en el puerto 80. Tras
+                                    identificar un archivo de texto con pistas sobre el usuario fergus y una página de login
+                                    admin protegida contra ataques de fuerza bruta, se explota una vulnerabilidad para
+                                    acceder al panel como fergus. Luego, se usa una vulnerabilidad de carga de archivos
+                                    arbitrarios y traversal de directorios para obtener una shell como www-data. La
+                                    enumeración revela una versión actualizada de Bludit con el hash SHA1 de la contraseña
+                                    de hugo, que se descifra en línea. El usuario hugo puede ejecutar comandos como
+                                    cualquier otro usuario con sudo, y al explotar una vulnerabilidad en sudo
+                                    (CVE-2019-14287), se obtiene una shell como root.
+                                </p>
+                                <div class="labels_container red-labels">
+                                    <span>Arbitrary File Upload</span>
+                                    <span>Directory Traversal</span>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                            src="https://labs.hackthebox.com/storage/avatars/70ea3357a2d090af11a0953ec8717e90.png"
-                            alt="">
-                        <div>
-                            <header>
-                                <span>Cap</span>
-                                <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/351">
-                                    <span>Marzo 30, 2024</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
+                        </li>
+                        <li>
+                            <img loading="lazy"
+                                src="https://labs.hackthebox.com/storage/avatars/a3d8bf97412b0b6247aac14695eff21c.png"
+                                alt="">
+                            <div>
+                                <header>
+                                    <span>Sense</span>
+                                    <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/111">
+                                        <span>Abril 28, 2024</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
 
-                                </a>
-                            </header>
-                            <span>Linux</span>
-                            <p>
-                                Cap es una maquina que expone un servidor HTTP con funciones
-                                administrativas mal protegidas. Una vulnerabilidad IDOR permite acceder a capturas de
-                                red ajenas, revelando credenciales en texto plano. Con ellas, se gana acceso y se escala
-                                a root mediante una capacidad de Linux mal gestionada.
-                            </p>
-                            <div class="labels_container red-labels">
-                                <span>Clear Text Credentials</span>
-                                <span>File System Configuration</span>
-                                <span>Insecure Direct Object Reference (IDOR)</span>
+                                    </a>
+                                </header>
+                                <span>OpenBSD</span>
+                                <p>
+                                    Sense es una máquina que, aunque no requiere muchos pasos, se vuelve desafiante debido a
+                                    que el exploit de prueba de concepto disponible es poco fiable. Se necesita un enfoque
+                                    alternativo que utilice la misma vulnerabilidad de manera distinta para conseguir
+                                    acceso, demostrando que el éxito a menudo depende de la adaptabilidad frente a los
+                                    fallos.
+                                </p>
+                                <div class="labels_container red-labels">
+                                    <span>Clear Text Credentials</span>
+                                    <span>Remote Code Execution</span>
+                                    <span>Sensitive Data Exposure</span>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                            src="https://labs.hackthebox.com/storage/avatars/a1fbd7cce1df4145b6a95df4644321bf.png"
-                            alt="">
-                        <div>
-                            <header>
-                                <span>SteamCloud</span>
-                                <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/443">
-                                    <span>Abril 22, 2024</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
+                        </li>
+                        <li>
+                            <img loading="lazy"
+                                src="https://labs.hackthebox.com/storage/avatars/23477a54b0a750374e281656d69e7661.png"
+                                alt="">
+                            <div>
+                                <header>
+                                    <span>SwagShop</span>
+                                    <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/188">
+                                        <span>Abril 29 del 2024</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
 
-                                </a>
-                            </header>
-                            <span>Linux</span>
-                            <p>
-                                SteamCloud es una máquina que revela puertos específicos de
-                                Kubernetes abiertos. Aunque el API requiere autenticación, Kubelet permite acceso
-                                anónimo, lo que permite listar pods del clúster. Al acceder a uno de ellos, se obtienen
-                                claves para autenticar en la API y desplegar un pod malicioso desde donde se ejecutan
-                                comandos para capturar la root flag.
-                            </p>
-                            <div class="labels_container red-labels">
-                                <span>Anonymous/Guest Access</span>
-                                <span>Command Execution</span>
-                                <span>Misconfiguration</span>
-                                <span>Sensitive Data Exposure</span>
+                                    </a>
+                                </header>
+                                <span>Linux</span>
+                                <p>
+                                    SwagShop es una máquina Linux que ejecuta una versión antigua de Magento, vulnerable a
+                                    SQLi y RCE, lo que lleva a una shell. El usuario de bajo nivel puede ejecutar vim con
+                                    privilegios de 'sudo', lo que puede ser aprovechado para escalar privilegios y obtener
+                                    una shell como root. Un recordatorio de que lo obsoleto puede ser la llave maestra para
+                                    la conquista total del sistema.
+                                </p>
+                                <div class="labels_container red-labels">
+                                    <span>Remote Code Execution</span>
+                                </div>
                             </div>
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                            src="https://labs.hackthebox.com/storage/avatars/c05aacfbe9bd98ea2840070538283b1e.png"
-                            alt="">
-                        <div>
-                            <header>
-                                <span>Secret</span>
-                                <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/408">
-                                    <span>Abril 23, 2024</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
+                        </li>
+                        <li>
+                            <img loading="lazy"
+                                src="https://labs.hackthebox.com/storage/avatars/ad38e890e4e93afce51118bec4b9f48b.png"
+                                alt="">
+                            <div>
+                                <header>
+                                    <span>Postman</span>
+                                    <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/215">
+                                        <span>Abril 30, 2024</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
 
-                                </a>
-                            </header>
-                            <span>Linux</span>
-                            <p>
-                                Secret es una máquina Linux que expone el código fuente de una API de
-                                autenticación personalizada, revelando un repositorio Git con un commit que contiene la
-                                clave secreta para firmar tokens JWT. Con esta clave, se falsifica un token como
-                                theadmin y se explota un endpoint vulnerable a inyección de comandos para obtener una
-                                shell como dasith. Luego, se abusa de un binario SUID que lee archivos como root; al
-                                provocar un fallo con volcados de memoria activos, se extrae la clave SSH de root.
-                            </p>
-                            <div class="labels_container red-labels">
-                                <span>Misconfiguration</span>
-                                <span>OS Command Injection</span>
-                                <span>Weak Authentication</span>
+                                    </a>
+                                </header>
+                                <span>Linux</span>
+                                <p>
+                                    Postman es una máquina Linux que ejecuta un servidor Redis sin autenticación. Este
+                                    servicio se puede aprovechar para escribir una clave pública SSH en la carpeta del
+                                    usuario. Tras encontrar una clave privada SSH cifrada y crackearla, se obtiene acceso al
+                                    usuario. Además, el usuario tiene una cuenta en una versión antigua de Webmin, que es
+                                    explotada mediante inyección de comandos para obtener privilegios root. La
+                                    vulnerabilidad yace en lo que parece ser seguro, y su explotación abre el camino hacia
+                                    el control total.
+                                </p>
+                                <div class="labels_container red-labels">
+                                    <span>Arbitrary File Write</span>
+                                    <span>Weak Authentication</span>
+                                </div>
                             </div>
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                            src="https://labs.hackthebox.com/storage/avatars/6437ea67350beceeb5c313f386bd1abe.png"
-                            alt="">
-                        <div>
-                            <header>
-                                <span>Blunder</span>
-                                <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/254">
-                                    <span>Abril 25, 2024</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
+                        </li>
+                        <li>
+                            <img loading="lazy"
+                                src="https://labs.hackthebox.com/storage/avatars/79bf8cb1bc8d6563f660827a43910430.png"
+                                alt="">
+                            <div>
+                                <header>
+                                    <span>OverGraph</span>
+                                    <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/464">
+                                        <span>Mayo 04, 2024</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
 
-                                </a>
-                            </header>
-                            <span>Linux</span>
-                            <p>
-                                Blunder es una máquina Linux que expone un CMS Bludit en el puerto 80. Tras
-                                identificar un archivo de texto con pistas sobre el usuario fergus y una página de login
-                                admin protegida contra ataques de fuerza bruta, se explota una vulnerabilidad para
-                                acceder al panel como fergus. Luego, se usa una vulnerabilidad de carga de archivos
-                                arbitrarios y traversal de directorios para obtener una shell como www-data. La
-                                enumeración revela una versión actualizada de Bludit con el hash SHA1 de la contraseña
-                                de hugo, que se descifra en línea. El usuario hugo puede ejecutar comandos como
-                                cualquier otro usuario con sudo, y al explotar una vulnerabilidad en sudo
-                                (CVE-2019-14287), se obtiene una shell como root.
-                            </p>
-                            <div class="labels_container red-labels">
-                                <span>Arbitrary File Upload</span>
-                                <span>Directory Traversal</span>
+                                    </a>
+                                </header>
+                                <span>Linux</span>
+                                <p>
+                                    Overgraph es una máquina difícil que comienza con una página estática en el puerto 80.
+                                    Tras identificar vhosts y registrar una cuenta, un ataque de NoSQL permite omitir la
+                                    validación OTP. Se manipulan cookies para obtener privilegios de administrador, y
+                                    mediante una combinación de XSS y CSRF, se roba el token de administrador. Luego, al
+                                    explotar un error en FFmpeg, se exfiltra una clave SSH, y con una vulnerabilidad de "Use
+                                    After Free", se obtiene ejecución de código como root.
+                                </p>
+                                <div class="labels_container red-labels">
+                                    <span>Cross Site Request Forgery (CSRF)</span>
+                                    <span>Cross Site Scripting (XSS)</span>
+                                    <span>Heap Overflow</span>
+                                    <span>Information Disclosure</span>
+                                    <span>Local File Inclusion</span>
+                                    <span>NoSQL Injection</span>
+                                    <span>Server Side Request Forgery (SSRF)</span>
+                                    <span>Server Side Template Injection (SSTI)</span>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                            src="https://labs.hackthebox.com/storage/avatars/a3d8bf97412b0b6247aac14695eff21c.png"
-                            alt="">
-                        <div>
-                            <header>
-                                <span>Sense</span>
-                                <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/111">
-                                    <span>Abril 28, 2024</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
+                        </li>
+                        <li>
+                            <img loading="lazy"
+                                src="https://labs.hackthebox.com/storage/avatars/8d3e1b5419f74d6ae4c1ac7f2faf949f.png"
+                                alt="">
+                            <div>
+                                <header>
+                                    <span>Unicode</span>
+                                    <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/415">
+                                        <span>Mayo 04, 2024</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
 
-                                </a>
-                            </header>
-                            <span>OpenBSD</span>
-                            <p>
-                                Sense es una máquina que, aunque no requiere muchos pasos, se vuelve desafiante debido a
-                                que el exploit de prueba de concepto disponible es poco fiable. Se necesita un enfoque
-                                alternativo que utilice la misma vulnerabilidad de manera distinta para conseguir
-                                acceso, demostrando que el éxito a menudo depende de la adaptabilidad frente a los
-                                fallos.
-                            </p>
-                            <div class="labels_container red-labels">
-                                <span>Clear Text Credentials</span>
-                                <span>Remote Code Execution</span>
-                                <span>Sensitive Data Exposure</span>
+                                    </a>
+                                </header>
+                                <span>Linux</span>
+                                <p>Unicode es una máquina de dificultad media que comienza con un webserver y un JWT cookie
+                                    para autenticación. Tras manipular el JWT y acceder a un nuevo dashboard, se descubre un
+                                    endpoint LFI que se puede vulnerar mediante un ataque HostSplit con caracteres Unicode.
+                                    Esto lleva a obtener credenciales SSH como code, quien puede ejecutar un binario
+                                    compilado en Python. Tras extraer el código fuente, se encuentra una forma de inyectar
+                                    comandos y colocar una clave SSH en el directorio de root, logrando finalmente acceso
+                                    como root.</p>
+                                <div class="labels_container red-labels">
+                                    <span>Argument Injection</span>
+                                    <span>Local File Inclusion</span>
+                                </div>
+                        </li>
+                        <li>
+                            <img loading="lazy"
+                                src="https://labs.hackthebox.com/storage/avatars/31252a37873dc31f600f40de91dd52d6.png"
+                                alt="">
+                            <div>
+                                <header>
+                                    <span>Fulcrum</span>
+                                    <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/116">
+                                        <span>Mayo 05, 2024</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
+
+                                    </a>
+                                </header>
+                                <span>Linux, Windows</span>
+                                <p>
+                                    Fulcrum es una de las máquinas más desafiantes en Hack The Box. Requiere varios pivoteos
+                                    entre Linux y Windows, y se enfoca profundamente en el uso de PowerShell, un terreno
+                                    donde solo los expertos pueden prevalecer.
+                                </p>
+                                <div class="labels_container red-labels">
+                                    <span>Clear Text Credentials</span>
+                                    <span>Information Disclosure</span>
+                                    <span>XXE Injection</span>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                            src="https://labs.hackthebox.com/storage/avatars/23477a54b0a750374e281656d69e7661.png"
-                            alt="">
-                        <div>
-                            <header>
-                                <span>SwagShop</span>
-                                <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/188">
-                                    <span>Abril 29 del 2024</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
+                        </li>
+                        <li>
+                            <img loading="lazy"
+                                src="https://labs.hackthebox.com/storage/avatars/ec49744375238192bd91910ab0f80c6a.png"
+                                alt="">
+                            <div>
+                                <header>
+                                    <span>Mischief</span>
+                                    <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/145">
+                                        <span>Mayo 5, 2024</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
 
-                                </a>
-                            </header>
-                            <span>Linux</span>
-                            <p>
-                                SwagShop es una máquina Linux que ejecuta una versión antigua de Magento, vulnerable a
-                                SQLi y RCE, lo que lleva a una shell. El usuario de bajo nivel puede ejecutar vim con
-                                privilegios de 'sudo', lo que puede ser aprovechado para escalar privilegios y obtener
-                                una shell como root. Un recordatorio de que lo obsoleto puede ser la llave maestra para
-                                la conquista total del sistema.
-                            </p>
-                            <div class="labels_container red-labels">
-                                <span>Remote Code Execution</span>
+                                    </a>
+                                </header>
+                                <span>Linux</span>
+                                <p>
+                                    Mischief es una máquina de dificultad extrema que resalta los riesgos de exponer SNMP y
+                                    de pasar credenciales por la línea de comandos. Además, presenta una página de
+                                    administración de "ping", común en dispositivos, que es clave para explorar
+                                    vulnerabilidades de RCE.
+                                </p>
+                                <div class="labels_container red-labels">
+                                    <span>OS Command Injection</span>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                            src="https://labs.hackthebox.com/storage/avatars/ad38e890e4e93afce51118bec4b9f48b.png"
-                            alt="">
-                        <div>
-                            <header>
-                                <span>Postman</span>
-                                <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/215">
-                                    <span>Abril 30, 2024</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
+                        </li>
+                        <li>
+                            <img loading="lazy"
+                                src="https://labs.hackthebox.com/storage/avatars/95c5d75171fcb101ce4af2ecab88716f.png"
+                                alt="">
+                            <div>
+                                <header>
+                                    <span>Aragog</span>
+                                    <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/126">
+                                        <span>Mayo 06, 2024</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
 
-                                </a>
-                            </header>
-                            <span>Linux</span>
-                            <p>
-                                Postman es una máquina Linux que ejecuta un servidor Redis sin autenticación. Este
-                                servicio se puede aprovechar para escribir una clave pública SSH en la carpeta del
-                                usuario. Tras encontrar una clave privada SSH cifrada y crackearla, se obtiene acceso al
-                                usuario. Además, el usuario tiene una cuenta en una versión antigua de Webmin, que es
-                                explotada mediante inyección de comandos para obtener privilegios root. La
-                                vulnerabilidad yace en lo que parece ser seguro, y su explotación abre el camino hacia
-                                el control total.
-                            </p>
-                            <div class="labels_container red-labels">
-                                <span>Arbitrary File Write</span>
-                                <span>Weak Authentication</span>
+                                    </a>
+                                </header>
+                                <span>Linux</span>
+                                <p>
+                                    Aragog aborda varias vulnerabilidades, técnicas y configuraciones incorrectas comunes en
+                                    el mundo real.
+                                </p>
+                                <div class="labels_container red-labels">
+                                    <span>Anonymous/Guest Access</span>
+                                    <span>XXE Injection</span>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                            src="https://labs.hackthebox.com/storage/avatars/79bf8cb1bc8d6563f660827a43910430.png"
-                            alt="">
-                        <div>
-                            <header>
-                                <span>OverGraph</span>
-                                <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/464">
-                                    <span>Mayo 04, 2024</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
+                        </li>
+                        <li>
+                            <img loading="lazy"
+                                src="https://labs.hackthebox.com/storage/avatars/aa26cb74eba5af265265611ab7bbd8fb.png"
+                                alt="">
+                            <div>
+                                <header>
+                                    <span>Ariekei</span>
+                                    <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/115">
+                                        <span>Mayo 08, 2024</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
 
-                                </a>
-                            </header>
-                            <span>Linux</span>
-                            <p>
-                                Overgraph es una máquina difícil que comienza con una página estática en el puerto 80.
-                                Tras identificar vhosts y registrar una cuenta, un ataque de NoSQL permite omitir la
-                                validación OTP. Se manipulan cookies para obtener privilegios de administrador, y
-                                mediante una combinación de XSS y CSRF, se roba el token de administrador. Luego, al
-                                explotar un error en FFmpeg, se exfiltra una clave SSH, y con una vulnerabilidad de "Use
-                                After Free", se obtiene ejecución de código como root.
-                            </p>
-                            <div class="labels_container red-labels">
-                                <span>Cross Site Request Forgery (CSRF)</span>
-                                <span>Cross Site Scripting (XSS)</span>
-                                <span>Heap Overflow</span>
-                                <span>Information Disclosure</span>
-                                <span>Local File Inclusion</span>
-                                <span>NoSQL Injection</span>
-                                <span>Server Side Request Forgery (SSRF)</span>
-                                <span>Server Side Template Injection (SSTI)</span>
+                                    </a>
+                                </header>
+                                <span>Linux</span>
+                                <p>
+                                    Ariekei es una máquina compleja que se centra principalmente en firewalls de
+                                    aplicaciones web y técnicas de pivoteo. Es una de las más desafiantes, requiriendo
+                                    múltiples escaladas y escapes de contenedores.
+                                </p>
+                                <div class="labels_container red-labels">
+                                    <span>OS Command Injection</span>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                            src="https://labs.hackthebox.com/storage/avatars/8d3e1b5419f74d6ae4c1ac7f2faf949f.png"
-                            alt="">
-                        <div>
-                            <header>
-                                <span>Unicode</span>
-                                <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/415">
-                                    <span>Mayo 04, 2024</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
+                        </li>
+                        <li>
+                            <img loading="lazy"
+                                src="https://labs.hackthebox.com/storage/avatars/bed7a083f31580b28d3fd0e60b66c920.png"
+                                alt="">
+                            <div>
+                                <header>
+                                    <span>Ellingson</span>
+                                    <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/189">
+                                        <span>Mayo 14, 2024</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
 
-                                </a>
-                            </header>
-                            <span>Linux</span>
-                            <p>Unicode es una máquina de dificultad media que comienza con un webserver y un JWT cookie
-                                para autenticación. Tras manipular el JWT y acceder a un nuevo dashboard, se descubre un
-                                endpoint LFI que se puede vulnerar mediante un ataque HostSplit con caracteres Unicode.
-                                Esto lleva a obtener credenciales SSH como code, quien puede ejecutar un binario
-                                compilado en Python. Tras extraer el código fuente, se encuentra una forma de inyectar
-                                comandos y colocar una clave SSH en el directorio de root, logrando finalmente acceso
-                                como root.</p>
-                            <div class="labels_container red-labels">
-                                <span>Argument Injection</span>
-                                <span>Local File Inclusion</span>
+                                    </a>
+                                </header>
+                                <span>Linux</span>
+                                <p>
+                                    Ellingson es una máquina de dificultad difícil que corre un servidor Python Flask en
+                                    modo debug detrás de un proxy nginx. El depurador puede ser explotado para ejecutar
+                                    código en el servidor con los privilegios del usuario que lo ejecuta. Al estar en el
+                                    grupo adm, se accede al archivo shadow.bak, obteniendo hashes que permiten el movimiento
+                                    lateral. Además, un binario SUID vulnerable a desbordamiento de búfer requiere una
+                                    explotación ROP, dado que ASLR y NX están habilitados, para finalmente obtener una shell
+                                    como root.
+                                </p>
+                                <div class="labels_container red-labels">
+                                    <span>Buffer Overflow</span>
+                                    <span>Remote Code Execution</span>
+                                    <span>Weak Permissions</span>
+                                </div>
                             </div>
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                            src="https://labs.hackthebox.com/storage/avatars/31252a37873dc31f600f40de91dd52d6.png"
-                            alt="">
-                        <div>
-                            <header>
-                                <span>Fulcrum</span>
-                                <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/116">
-                                    <span>Mayo 05, 2024</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
+                        </li>
+                        <li>
+                            <img loading="lazy"
+                                src="https://labs.hackthebox.com/storage/avatars/0fc719df3061177675fd15d156da0ac0.png"
+                                alt="">
+                            <div>
+                                <header>
+                                    <span>Sink</span>
+                                    <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/313">
+                                        <span>Mayo 28, 2024</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
 
-                                </a>
-                            </header>
-                            <span>Linux, Windows</span>
-                            <p>
-                                Fulcrum es una de las máquinas más desafiantes en Hack The Box. Requiere varios pivoteos
-                                entre Linux y Windows, y se enfoca profundamente en el uso de PowerShell, un terreno
-                                donde solo los expertos pueden prevalecer.
-                            </p>
-                            <div class="labels_container red-labels">
-                                <span>Clear Text Credentials</span>
-                                <span>Information Disclosure</span>
-                                <span>XXE Injection</span>
+                                    </a>
+                                </header>
+                                <span>Linux</span>
+                                <p>
+                                    Sink es una máquina de dificultad insana que presenta una aplicación vulnerable a un
+                                    ataque HTTP Desync. Explotar esta vulnerabilidad otorga acceso a un usuario con altos
+                                    privilegios en la aplicación, lo que lleva al acceso al servicio Gitea. La enumeración
+                                    de repositorios revela una fuga de claves privadas que permite obtener acceso al
+                                    sistema. Además, al explorar el servicio SecretsManager, se encuentran credenciales que
+                                    facilitan el movimiento lateral, y el acceso al sistema se logra al descifrar un archivo
+                                    usando el servicio KMS. Un despliegue de astucia donde cada capa es una oportunidad para
+                                    el atacante.
+                                </p>
+                                <div class="labels_container red-labels">
+                                    <span>HTTP request smuggling</span>
+                                    <span>Information Disclosure</span>
+                                    <span>Misconfiguration</span>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                            src="https://labs.hackthebox.com/storage/avatars/ec49744375238192bd91910ab0f80c6a.png"
-                            alt="">
-                        <div>
-                            <header>
-                                <span>Mischief</span>
-                                <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/145">
-                                    <span>Mayo 5, 2024</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
+                        </li>
+                        <li>
+                            <img loading="lazy"
+                                src="https://labs.hackthebox.com/storage/avatars/e2e239f39430cf597202497d910b82b8.png"
+                                alt="">
+                            <div>
+                                <header>
+                                    <span>Validation</span>
+                                    <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/382">
+                                        <span>Agosto 17, 2024</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
 
-                                </a>
-                            </header>
-                            <span>Linux</span>
-                            <p>
-                                Mischief es una máquina de dificultad extrema que resalta los riesgos de exponer SNMP y
-                                de pasar credenciales por la línea de comandos. Además, presenta una página de
-                                administración de "ping", común en dispositivos, que es clave para explorar
-                                vulnerabilidades de RCE.
-                            </p>
-                            <div class="labels_container red-labels">
-                                <span>OS Command Injection</span>
+                                    </a>
+                                </header>
+                                <span>Linux</span>
+                                <p>
+                                    Validation es una máquina Linux que explota una inyección SQL de segunda orden para
+                                    lograr ejecución remota de código mediante una web shell. El acceso inicial da paso a
+                                    una escalada simple reutilizando credenciales, culminando en acceso root.
+                                </p>
+                                <div class="labels_container red-labels">
+                                    <span>Misconfiguration</span>
+                                    <span>SQL Injection</span>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                            src="https://labs.hackthebox.com/storage/avatars/95c5d75171fcb101ce4af2ecab88716f.png"
-                            alt="">
-                        <div>
-                            <header>
-                                <span>Aragog</span>
-                                <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/126">
-                                    <span>Mayo 06, 2024</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
+                        </li>
+                    </ul>
+                </section>
 
-                                </a>
-                            </header>
-                            <span>Linux</span>
-                            <p>
-                                Aragog aborda varias vulnerabilidades, técnicas y configuraciones incorrectas comunes en
-                                el mundo real.
-                            </p>
-                            <div class="labels_container red-labels">
-                                <span>Anonymous/Guest Access</span>
-                                <span>XXE Injection</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                            src="https://labs.hackthebox.com/storage/avatars/aa26cb74eba5af265265611ab7bbd8fb.png"
-                            alt="">
-                        <div>
-                            <header>
-                                <span>Ariekei</span>
-                                <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/115">
-                                    <span>Mayo 08, 2024</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
+                <hr class="divisor">
 
-                                </a>
-                            </header>
-                            <span>Linux</span>
-                            <p>
-                                Ariekei es una máquina compleja que se centra principalmente en firewalls de
-                                aplicaciones web y técnicas de pivoteo. Es una de las más desafiantes, requiriendo
-                                múltiples escaladas y escapes de contenedores.
-                            </p>
-                            <div class="labels_container red-labels">
-                                <span>OS Command Injection</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                            src="https://labs.hackthebox.com/storage/avatars/bed7a083f31580b28d3fd0e60b66c920.png"
-                            alt="">
-                        <div>
-                            <header>
-                                <span>Ellingson</span>
-                                <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/189">
-                                    <span>Mayo 14, 2024</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
-
-                                </a>
-                            </header>
-                            <span>Linux</span>
-                            <p>
-                                Ellingson es una máquina de dificultad difícil que corre un servidor Python Flask en
-                                modo debug detrás de un proxy nginx. El depurador puede ser explotado para ejecutar
-                                código en el servidor con los privilegios del usuario que lo ejecuta. Al estar en el
-                                grupo adm, se accede al archivo shadow.bak, obteniendo hashes que permiten el movimiento
-                                lateral. Además, un binario SUID vulnerable a desbordamiento de búfer requiere una
-                                explotación ROP, dado que ASLR y NX están habilitados, para finalmente obtener una shell
-                                como root.
-                            </p>
-                            <div class="labels_container red-labels">
-                                <span>Buffer Overflow</span>
-                                <span>Remote Code Execution</span>
-                                <span>Weak Permissions</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                            src="https://labs.hackthebox.com/storage/avatars/0fc719df3061177675fd15d156da0ac0.png"
-                            alt="">
-                        <div>
-                            <header>
-                                <span>Sink</span>
-                                <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/313">
-                                    <span>Mayo 28, 2024</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
-
-                                </a>
-                            </header>
-                            <span>Linux</span>
-                            <p>
-                                Sink es una máquina de dificultad insana que presenta una aplicación vulnerable a un
-                                ataque HTTP Desync. Explotar esta vulnerabilidad otorga acceso a un usuario con altos
-                                privilegios en la aplicación, lo que lleva al acceso al servicio Gitea. La enumeración
-                                de repositorios revela una fuga de claves privadas que permite obtener acceso al
-                                sistema. Además, al explorar el servicio SecretsManager, se encuentran credenciales que
-                                facilitan el movimiento lateral, y el acceso al sistema se logra al descifrar un archivo
-                                usando el servicio KMS. Un despliegue de astucia donde cada capa es una oportunidad para
-                                el atacante.
-                            </p>
-                            <div class="labels_container red-labels">
-                                <span>HTTP request smuggling</span>
-                                <span>Information Disclosure</span>
-                                <span>Misconfiguration</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <img loading="lazy"
-                            src="https://labs.hackthebox.com/storage/avatars/e2e239f39430cf597202497d910b82b8.png"
-                            alt="">
-                        <div>
-                            <header>
-                                <span>Validation</span>
-                                <a target="_blank" href="https://www.hackthebox.com/achievement/machine/1829879/382">
-                                    <span>Agosto 17, 2024</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="currentColor"><path d="M140-140v-680h324.61v60H200v560h560v-264.61h60V-140H140Zm248.77-206.62-42.15-42.15L717.85-760H560v-60h260v260h-60v-157.85L388.77-346.62Z"/></svg>
-
-                                </a>
-                            </header>
-                            <span>Linux</span>
-                            <p>
-                                Validation es una máquina Linux que explota una inyección SQL de segunda orden para
-                                lograr ejecución remota de código mediante una web shell. El acceso inicial da paso a
-                                una escalada simple reutilizando credenciales, culminando en acceso root.
-                            </p>
-                            <div class="labels_container red-labels">
-                                <span>Misconfiguration</span>
-                                <span>SQL Injection</span>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-
-        </menu>
-    </main>
+            </menu>
+        </main>
+    </div>
 </body>
 
 </html>
