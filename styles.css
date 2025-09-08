@@ -185,8 +185,18 @@ section ul li span b {
     font-weight: 400;
 }
 
-section.experience ul li {
+section.experience > ul li {
     margin-bottom: 21px;
+}
+
+section.experience ul li ul {
+    margin-bottom: 13px;
+}
+
+section.experience ul li ul li {
+    font-size: 1.21rem;
+    font-weight: 300;
+    margin-bottom: 0;
 }
 
 section.experience ul li p {
