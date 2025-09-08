@@ -87,7 +87,6 @@ img {
     width: var(--square-px);
     height: var(--square-px);
     border-radius: 3px;
-    margin-top: 89px;
 }
 
 ul.links {
@@ -253,6 +252,10 @@ section.ctf ul li {
     margin-bottom: 21px;
 }
 
+section.ctf ul li > div {
+    width: 100%;
+}
+
 section.ctf ul li p {
     font-weight: 300;
 }
@@ -264,9 +267,18 @@ section.ctf ul li img {
     border-radius: 3px;
 }
 
+section.ctf ul li header div {
+    gap: 5px;
+    display: flex;
+}
+
 section.ctf ul li header span {
     display: block;
     font-weight: 400;
+}
+
+section.ctf ul li header span:nth-child(2) {
+    font-weight: 300;
 }
 
 section.ctf ul li a {
