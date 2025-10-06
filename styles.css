@@ -339,6 +339,12 @@ section.ctf ul li a svg {
     .row {
         display: block;
     }
+    
+    .sidebar {
+        display: flex;
+        gap: 0 21px;
+        padding: 34px 34px 0 34px;
+    }
 
     img {
         margin-top: 0;
@@ -356,6 +362,27 @@ section.ctf ul li a svg {
     /* .sidebar {
         padding-left: 34px;
     } */
+
+    body>div {
+        gap: 0 21px;
+        display: flex;
+    }
+}
+
+@media (max-width: 610px) {
+    body {
+        display: block;
+    }
+
+    .sidebar {
+        display: flex;
+        gap: 0 21px;
+        padding: 13px 13px 0 13px;
+    }
+
+    main {
+        padding: 0 13px;
+    }
 
     body>div {
         gap: 0 21px;
