@@ -45,7 +45,7 @@ nav {
 }
 
 nav a {
-    color: light-dark(rgb(0,0,0), rgb(255,255,255));
+    color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
     padding: 13px 21px;
 }
 
@@ -185,7 +185,7 @@ section ul li span b {
     font-weight: 400;
 }
 
-section.experience > ul li {
+section.experience>ul li {
     margin-bottom: 21px;
 }
 
@@ -223,7 +223,6 @@ section.experience ul li p {
 .labels_container span {
     padding: 3px 5px;
     display: inline;
-    text-wrap: nowrap;
     font-style: normal;
     font-size: 1rem;
     font-weight: 300;
@@ -239,6 +238,23 @@ section.experience ul li p {
 section ul li p {
     margin: 0 0 5px 0;
     font-size: 1.21rem;
+}
+
+.checked-item-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.checked-item-container ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.checked-item-container li::before {
+    content: "✓";
+    margin-right: 8px;
 }
 
 section.experience .development-time {
@@ -262,7 +278,7 @@ section.ctf ul li {
     margin-bottom: 21px;
 }
 
-section.ctf ul li > div {
+section.ctf ul li>div {
     width: 100%;
 }
 
