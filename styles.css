@@ -249,10 +249,22 @@ section ul li p {
 .checked-item-container ul {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
+    justify-content: space-between;
 }
 
-.checked-item-container li::before {
+.checked-item-container ul .sub-item-list__container {
+    padding-left: calc(34px + 13px);
+    list-style: circle;
+}
+
+.checked-item-container ul li:not(.sub-item-list) {
+    flex-basis: calc(50% - 13px);
+}
+
+.checked-item-container li:not(.sub-item-list)::before {
     content: "✓";
     margin-right: 8px;
 }
@@ -339,7 +351,7 @@ section.ctf ul li a svg {
     .row {
         display: block;
     }
-    
+
     .sidebar {
         display: flex;
         gap: 0 21px;
