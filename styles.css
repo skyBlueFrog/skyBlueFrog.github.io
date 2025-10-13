@@ -255,6 +255,10 @@ section ul li p {
     justify-content: space-between;
 }
 
+.checked-item-container ul li {
+    line-height: 1.3;
+}
+
 .checked-item-container ul .sub-item-list__container {
     padding-left: calc(34px + 13px);
     list-style: circle;
