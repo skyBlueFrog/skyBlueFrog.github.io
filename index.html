@@ -890,26 +890,27 @@
                                 <span><b>2023</b></span>
                             </header>
                             <p>
-                                Un sistema diseñado para comparar similitud entre cada bloque de imagen satelital del
-                                planeta con un dibujo otorgado por el usuario, surgidos de sus sueños oníricos (mios).
-                                Utilizando una API no oficial de Google Maps —obtenida tras analizar los endpoints
-                                consultados por la plataforma— el script recorre coordenadas globales, descarga imágenes
-                                satelitales en tiempo real y evalúa su similitud con el dibujo ingresado. El usuario
-                                puede
-                                ajustar el umbral de similitud deseado, permitiendo que el sistema detecte coincidencias
-                                visuales entre el fragmento soñado y regiones reales del planeta.
-
-                                Una herramienta experimental para geolocalizar sueños.
-
-                                Utilizando <a target="_blank"
-                                    href="https://github.com/lllyasviel/ControlNet">StableDiffusion control-net
-                                    (gradio_scribble2image.py)</a> para convertir los trazos del soñador en mapas
-                                satelitales
+                                El sistema está diseñado para comparar la similitud entre cada bloque de imagen
+                                satelital del planeta y un dibujo proporcionado por el usuario (hipnagrafía o traducción
+                                onírica visual).
+                                <br><br>
+                                Se utiliza una API sin límite (y no paga) de Google Maps, obtenida mediante análisis.
+                                <br><br>
+                                El script recorre coordenadas globales, descarga imágenes satelitales en tiempo real y
+                                evalúa su similitud con el dibujo ingresado. El sistema detecta coincidencias visuales
+                                entre el fragmento soñado (generado mediante dream-to-image generation) y regiones
+                                reales del planeta.
+                                <br><br>
+                                Para realizar dream-to-image generation con bajo presupuesto, se emplea <a
+                                    target="_blank" href="https://github.com/lllyasviel/ControlNet">StableDiffusion
+                                    junto con control-net
+                                    (gradio_scribble2image.py)</a> para convertir los trazos de lo soñado
+                                en imágenes, y luego comparar dichas imágenes con vistas satelitales.
                             </p>
                             <span class="labels_container frog-sky-blue-labels"><b>Habilidades empleadas:</b>
                                 <span>Python</span>
                                 <span>Stable diffusion</span>
-                                <span>Web Scrapping</span>
+                                <span>Análisis y descubrimiento de endpoints</span>
                             </span>
                         </li>
 
